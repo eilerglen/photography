@@ -1,0 +1,13 @@
+.intro__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 76px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .intro__grid {
+        grid-template-columns: 1fr;
+       
+        }
+    }

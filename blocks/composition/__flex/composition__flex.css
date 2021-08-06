@@ -1,0 +1,4 @@
+.composition__flex {
+    display: flex;
+    justify-content: space-between;
+}

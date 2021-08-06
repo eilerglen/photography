@@ -1,0 +1,10 @@
+.composition__description {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.composition__description:last-of-type {
+    margin-bottom: 0;
+}

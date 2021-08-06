@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css">
+  <title>easy03</title>
+</head>
+
+<body class="page">
+
+  <!--header-->
+  
+    <header class = "header">
+      <div class="header__wrapper page_section">
+       <!--<button class="button-burger"></button>-->
+        <img src="images/logo.svg" alt="Логотип сайта" class="header__logo">
+        <nav class="header__nav-bar">
+       <!-- <button class="header__close-nav-bar"></button>-->
+        <ul class="header__list-links">
+          <li class="header__list-item"><a href="#composition" class="link">Композиция</a></li>
+          <li class="header__list-item"><a href="#camera" class="link">Камера</a></li>
+          <li class="header__list-item"><a href="" class="link">Поиск заказов</a></li>
+        </ul>
+  
+        </nav>
+      </div>
+    </header>
+  
+  <!--Начинается основной контент страницы-->
+
+  <main>
+    <!--Секция intro-->
+    <section class="intro page_section">
+      <div class="intro__grid">
+        <div class="intro__info">
+          <h1 class="intro__title">Курс по фотографии</h1>
+          <p class="intro__subtitle">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
+          <button class="button"><a href=""> Подробнее</a></button>
+        </div>
+        <div class="intro__image"></div>
+    </div>
+
+    </section>
+
+    <section class="composition" id = "composition">
+      <div class="composition__wrapper  page_section">
+        <div class="composition__grid">
+          <div class="composition__info">
+            <h3 class="composition__title">композиция</h3>
+            <p class="composition__subtitle"> Изучите композицию </p>
+            <div class = "composition__text">
+              <p class="composition__description">Вы изучите гармоничное размещение всех элементов изображения на снимке.</p>
+              <p class="composition__description">Изучите композицию интуитивную и какие-то определённые законы.</p>
+            </div>
+            <button class="button"> Подробнее </button>
+          </div>
+          <div class="composition__image"></div>
+        </div>
+        <div class = "composition__flex">
+          <p class = "composition__article">Правило третей, при котором нужно распологать объекты на пересечениях.</p>
+          <p class = "composition__article">Простота: убирай всё лишнее и кадрируй!</p>
+          <p class = "composition__article">Равновесие: уравновесь пятна объекта и фона.</p>
+          <p class = "composition__article">3D глубина кадра: расположи объект позади и перед другими предметами.</p>
+        </div>  
+      </div>
+    </section>
+    
+    <section class="camera" id = "camera">
+      <div class="camera__wrapper page_section">
+        <div class="camera__grid">
+          <div class="camera__info">
+            <h3 class="camera__title">камера</h3>
+            <p class="camera__subtitle"> Настройка Съемка Обработка </p>
+            <p class="camera__review"> отзывы про часть о камерах </p>
+          </div>
+          <div class="camera__image"></div>
+        </div>
+        <ul class = "camera__list-reviews">
+          <!-- Собственнно темплейт, который должен выводить отзывы на страницу-->
+         <template id = "template-review">
+           <li class = "camera__review-item">
+             <p class = "camera__review-text"></p>
+             <p class = "camera__review-user"></p>
+             <p class = "camera__review-login"></p>
+           </li>
+         </template>
+       </ul>
+      </div>
+    </section>
+
+    <section class="orders page_section">
+      <h3 class="orders__title">Поиск заказов</h3>
+      <p class="orders__subtitle">Научим находить заказы</p>
+    </section>
+
+      <!--Начинается секция Запись-->
+    <section class="appointment">
+      <div class="appointment__wrapper page_section">
+        <span class = "appointment__arrow"></span>
+        <p class="appointment__title">Записаться! сейчас!</p>
+        <div class="appointment__form-container">
+          <form action="" class="appointment__form">
+            <input type="email" id = "email" name = "email" placeholder="Ваша почта">
+            <button type = "submit" aria-label="Записаться"> Записаться</button>
+
+          </form>
+        </div>
+      </div>    
+    </section>
+  </main>
+  <!--Начинается блок footer-->
+  <footer class="footer ">
+    <div class="footer__wrapper page_section">
+      <p class="footer__copyright">2021 Photo-lessons.</p>
+    </div>
+  </footer>
+  <script src = "scripts/reviews.js"></script>
+  <script src = "scripts/main.js"> </script>
+</body>
+
+</html>

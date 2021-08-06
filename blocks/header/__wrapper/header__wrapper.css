@@ -1,0 +1,13 @@
+.header__wrapper {
+    min-height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+    .header__wrapper{
+        flex-direction: row-reverse;
+       
+        }
+    }

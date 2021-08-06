@@ -1,0 +1,16 @@
+.camera__list-reviews {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 76px;
+    margin-bottom: 50px;
+
+}
+
+@media screen and (max-width: 1023px) {
+    .camera__list-reviews{
+        grid-template-columns: 1fr;
+       
+        }
+    }
