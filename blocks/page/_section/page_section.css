@@ -3,3 +3,10 @@
   max-width: 1340px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1023px) {
+  .page_section {
+      padding-left: 40px;
+      padding-right: 40px;
+      }
+  }

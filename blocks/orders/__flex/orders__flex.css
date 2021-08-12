@@ -1,11 +1,11 @@
-.composition__flex {
+.orders__flex {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1023px) {
-    .composition__flex {
+    .orders__flex {
         flex-direction: column;
+        
         }
     }

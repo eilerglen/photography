@@ -1,0 +1,8 @@
+.orders__image {
+    max-width: 642px;
+    width: 100%;
+    height: 333px;
+    background: url(../../../images/orders__image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}

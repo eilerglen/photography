@@ -1,6 +1,13 @@
 .camera__subtitle {
+    margin: 0;
     max-width: 617px;
     font-size: 122px;
     line-height: 122px;
     margin-bottom: 359px;
 }
+
+@media screen and (max-width: 1023px) {
+    .camera__subtitle {
+            margin-bottom: 60px;
+        }
+    }

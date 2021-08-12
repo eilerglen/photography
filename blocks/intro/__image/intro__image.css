@@ -1,6 +1,24 @@
 .intro__image {
+    max-width: 642px;
+    width: 100%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: span 3;
     background: url(../../../images/intro-image.jpg) no-repeat;
     background-size: cover;
-    width: 100%;
     background-position: center;
 }
+
+@media screen and (max-width: 1023px) {
+    .intro__image {
+        width: 688px;
+        min-height: 594px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-start: 1;
+        grid-row-end: none;
+        margin-bottom: 60px;
+        }
+    }

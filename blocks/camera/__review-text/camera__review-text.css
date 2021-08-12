@@ -1,4 +1,5 @@
 .camera__review-text {
+    max-width: 526px;
     font-size: 43px;
     line-height: 43px;
 }

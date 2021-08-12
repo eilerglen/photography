@@ -13,15 +13,16 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__list-links/header__list-links.css);
 @import url(../blocks/header/__list-item/header__list-item.css);
+@import url(../blocks/header/__nav-bar/header____nav-bar.css);
 @import url(../blocks/header/__wrapper/header__wrapper.css);
 
 @import url(../blocks/link/link.css);
 
 /* intro */
 @import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__grid/intro__grid.css);
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__subtitle/intro__subtitle.css);
-@import url(../blocks/intro/__grid/intro__grid.css);
 @import url(../blocks/intro/__image/intro__image.css);
 
 /* composition */
@@ -49,11 +50,13 @@
 @import url(../blocks/camera/__review-user/camera__review-user.css);
 @import url(../blocks/camera/__review-login/camera__review-login.css);
 
-/* appointment */
+/* orders */
 @import url(../blocks/orders/orders.css);
 @import url(../blocks/orders/__title/orders__title.css);
 @import url(../blocks/orders/__subtitle/orders__subtitle.css);
-
+@import url(../blocks/orders/__image/orders__image.css);
+@import url(../blocks/orders/__description/orders__description.css);
+@import url(../blocks/orders/__flex/orders__flex.css);
 
 /* appointment */
 @import url(../blocks/appointment/appointment.css);
@@ -65,3 +68,4 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__wrapper/footer__wrapper.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+

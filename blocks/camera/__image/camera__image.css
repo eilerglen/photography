@@ -1,7 +1,23 @@
 .camera__image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: span 4;
     background: url(../../../images/camera-image.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     background-position: center;
     z-index: 10;
 }
+
+@media screen and (max-width: 1023px) {
+    .camera__image {
+        width: 688px;
+        min-height: 685px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-start: 1;
+        grid-row-end: none;
+        margin-bottom: 60px;
+        }
+    }
