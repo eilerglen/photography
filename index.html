@@ -103,12 +103,12 @@
       <!--Начинается секция Запись-->
     <section class="appointment">
       <div class="appointment__wrapper page_section">
-        <span class = "appointment__arrow"></span>
-        <p class="appointment__title">Записаться! сейчас!</p>
+       
+        <p class="appointment__title"> <span class = "appointment__arrow"></span>Записаться! сейчас!</p>
         <div class="appointment__form-container">
-          <form action="" class="appointment__form">
-            <input type="email" id = "email" name = "email" placeholder="Ваша почта">
-            <button type = "submit" aria-label="Записаться"> Записаться</button>
+          <form name = "feedback-form" class="appointment__form">
+            <input name = "feedback-email" type = "email" id = "email" required placeholder="Ваша почта" class = "appointment__feedback-email">
+            <button type = "submit" class = "appointment__feedback-submit" aria-label="Записаться"> Записаться</button>
 
           </form>
         </div>

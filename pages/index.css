@@ -61,8 +61,10 @@
 /* appointment */
 @import url(../blocks/appointment/appointment.css);
 @import url(../blocks/appointment/__wrapper/appointment__wrapper.css);
-@import url(../blocks/appointment/appointment__arrow.css);
+@import url(../blocks/appointment/__arrow/appointment__arrow.css);
 @import url(../blocks/appointment/__title/appointment__title.css);
+@import url(../blocks/appointment/__feedback-email/appointment__feedback-email.css);
+@import url(../blocks/appointment/__feedback-submit/appointment__feedback-submit.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);

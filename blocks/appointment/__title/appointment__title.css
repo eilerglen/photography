@@ -1,4 +1,5 @@
 .appointment__title {
+    position: relative;
     max-width: 685px;
     margin: 0;
     font-size: 120px;

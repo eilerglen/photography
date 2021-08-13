@@ -1,3 +1,17 @@
 .appointment__arrow {
+    position:absolute;
+    left: -179px;
+    top: 10px;
+    display: block;
+    width: 129px;
+    height: 95px;
+    background: url(../../../images/Arrow.svg) no-repeat;
+    background-size: cover;
     
 }
+
+@media screen and (max-width: 1023px) {
+    .appointment__arrow {
+        display: none;
+        }
+    }
