@@ -2,6 +2,13 @@
     padding-left: 179px;
 }
 
+
+@media screen and (max-width: 1110px) {
+    .appointment__wrapper {
+        padding-left: 60px;
+        }
+    }
+
 @media screen and (max-width: 1023px) {
     .appointment__wrapper {
         padding-left: 40px;

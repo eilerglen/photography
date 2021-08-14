@@ -53,6 +53,7 @@
 @import url(../blocks/camera/__title/camera__title.css);
 @import url(../blocks/camera/__subtitle/camera__subtitle.css);
 @import url(../blocks/camera/__review/camera__review.css);
+@import url(../blocks/camera/__review-item/camera__review-item.css);
 @import url(../blocks/camera/__image/camera__image.css);
 @import url(../blocks/camera/__list-reviews/camera__list-reviews.css);
 @import url(../blocks/camera/__review-text/camera__review-text.css);

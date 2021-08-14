@@ -1,3 +1,33 @@
 .camera__review-item {
     list-style-type: none;
 }
+
+@media screen and (max-width: 1023px) {
+    .camera__review-item {
+        padding-bottom: 60px;
+        border-bottom: solid 1px #fff;
+        margin-bottom: 60px;
+    }
+    .camera__review-item:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        
+    }    
+}
+
+@media screen and (max-width: 460px) {
+    .camera__review-item {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    .camera__review-item:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        
+    }  
+}
+
+.camera__review-item:last-of-type {
+    border: 0;
+    
+}

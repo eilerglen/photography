@@ -1,4 +1,12 @@
 .camera__review-user {
+    margin: 0;
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 10px;
 }
+
+@media screen and (max-width: 460px) {
+    .camera__review-user {
+        margin-bottom: 6px;
+        }
+    }

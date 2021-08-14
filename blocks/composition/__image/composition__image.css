@@ -10,6 +10,17 @@
     z-index: 10;
 }
 
+@media screen and (max-width: 1110px) {
+    .composition__image {
+        width: 100%;
+        min-height: 900px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: none;
+        margin-bottom: 60px;
+        }
+    }
+
 @media screen and (max-width: 1023px) {
     .composition__image {
         width: 100%;
