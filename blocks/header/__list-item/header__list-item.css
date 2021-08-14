@@ -4,3 +4,16 @@
 .header__list-item:last-of-type {
     margin-right: 0;
 }
+
+@media screen and (max-width: 460px) {
+    .header__list-item {
+        margin-right: 0;
+        margin-bottom: 12px;
+        }
+
+    .header__list-item:last-of-type {
+            margin-right: 0;
+        }    
+    }
+
+

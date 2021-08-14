@@ -14,16 +14,22 @@
   
     <header class = "header">
       <div class="header__wrapper page_section">
-       <!--<button class="button-burger"></button>-->
+        <button type = "button" class="header__button-burger">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
         <img src="images/logo.svg" alt="Логотип сайта" class="header__logo">
         <nav class="header__nav-bar">
-       <!-- <button class="header__close-nav-bar"></button>-->
-        <ul class="header__list-links">
+          <div class="header__burger-menu">
+            <img src="images/logo.svg" alt="Логотип сайта" class="header__logo header__logo_mobile">
+            <button class="header__button-close"></button>
+          </div>
+          <ul class="header__list-links">
           <li class="header__list-item"><a href="#composition" class="link">Композиция</a></li>
           <li class="header__list-item"><a href="#camera" class="link">Камера</a></li>
-          <li class="header__list-item"><a href="" class="link">Поиск заказов</a></li>
-        </ul>
-  
+          <li class="header__list-item"><a href="" class="link">Поиск&nbspзаказов</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -37,7 +43,7 @@
         <h1 class="intro__title">Курс по фотографии</h1>
         <div class="intro__image"></div>      
         <p class="intro__subtitle">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
-        <button class="button"><a href=""> Подробнее</a></button>
+        <a href="" class = "button"> Подробнее</a>
     </div>
 
     </section>
@@ -52,7 +58,7 @@
               <p class="composition__description">Вы изучите гармоничное размещение всех элементов изображения на снимке.</p>
               <p class="composition__description">Изучите композицию интуитивную и какие-то определённые законы.</p>
             </div>
-            <button class="button"> Подробнее </button>
+            <a href="" class = "button"> Подробнее</a>
         </div>
         <div class = "composition__flex">
           <p class = "composition__article">Правило третей, при котором нужно распологать объекты на пересечениях.</p>
@@ -92,7 +98,7 @@
         <div>
           <p class="orders__description">Мы научим вас искать заказы на всяких фриланс биржах, а
             когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.</p>
-          <button class="button"> Подробнее </button>  
+          <a href="" class = "button"> Подробнее</a>
         </div>
        
         
@@ -108,7 +114,7 @@
         <div class="appointment__form-container">
           <form name = "feedback-form" class="appointment__form">
             <input name = "feedback-email" type = "email" id = "email" required placeholder="Ваша почта" class = "appointment__feedback-email">
-            <button type = "submit" class = "appointment__feedback-submit" aria-label="Записаться"> Записаться</button>
+            <button type = "submit" class = "appointment__feedback-submit" aria-label="Записаться"> Записаться!</button>
 
           </form>
         </div>
@@ -116,8 +122,8 @@
     </section>
   </main>
   <!--Начинается блок footer-->
-  <footer class="footer ">
-    <div class="footer__wrapper page_section">
+  <footer class="footer page_section">
+    <div class="footer__wrapper">
       <p class="footer__copyright">2021 Photo-lessons.</p>
     </div>
   </footer>

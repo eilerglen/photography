@@ -8,3 +8,11 @@
 .composition__description:last-of-type {
     margin-bottom: 0;
 }
+
+
+@media screen and (max-width: 460px) {
+    .composition__description {
+        font-size: 14px;
+        line-height: 18px;
+        }
+    }

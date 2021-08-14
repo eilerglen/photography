@@ -1,3 +1,15 @@
 .orders__description {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 24px;
+    margin: 0;
+    margin-bottom: 148px;
     max-width: 380px;
 }
+
+@media screen and (max-width: 1023px) {
+    .orders__description {
+        font-size: 14px;
+        line-height: 18px;
+        }
+    }

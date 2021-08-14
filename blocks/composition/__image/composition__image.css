@@ -12,12 +12,23 @@
 
 @media screen and (max-width: 1023px) {
     .composition__image {
-        width: 688px;
+        width: 100%;
         min-height: 685px;
         grid-column-start: 1;
-        grid-row-start: 2;
         grid-row-start: 1;
         grid-row-end: none;
         margin-bottom: 60px;
         }
     }
+
+@media screen and (max-width: 460px) {
+    .composition__image {
+        width: 100%;
+        min-height: 278px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-start: 1;
+        grid-row-end: none;
+        margin-bottom: 60px;
+    }
+}

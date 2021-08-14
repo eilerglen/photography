@@ -2,5 +2,16 @@
     list-style-type: none;
     display: flex;
     padding: 0;
+    margin: 0;
+
+}
+
+@media (max-width: 460px) {
+    .header__list-links {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 26px;
+    }   
 
 }

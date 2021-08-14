@@ -1,8 +1,19 @@
 .appointment__feedback-email {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
     box-sizing: border-box;
     max-width: 348px;
     width: 100%;
     min-height: 50px;
-    border: solid 2px #000;
+    border-width: 2px 0 2px 2px;
+    border-color: #000;
     border-radius: 8px 0 0 8px;
+    padding-left: 20px;
 }
+
+@media screen and (max-width: 460px) {
+    .appointment__feedback-email {
+        width: 175px;
+        }
+    }

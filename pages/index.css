@@ -1,6 +1,6 @@
 /*fonts, header, content, footer*/
 @import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
+@import url(../vendor/fonts.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/page/_section/page_section.css);
 @import url(../blocks/header/header.css);
@@ -11,10 +11,19 @@
 
  /* header */
 @import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo/_active/header__logo_active.css);
+@import url(../blocks/header/__logo/_mobile/header__logo_mobile.css);
 @import url(../blocks/header/__list-links/header__list-links.css);
 @import url(../blocks/header/__list-item/header__list-item.css);
 @import url(../blocks/header/__nav-bar/header____nav-bar.css);
 @import url(../blocks/header/__wrapper/header__wrapper.css);
+@import url(../blocks/header/__button-burger/header__button-burger.css);
+@import url(../blocks/header/__burger-menu/header__burger-menu.css);
+@import url(../blocks/header/__burger-line/header__burger-line.css);
+@import url(../blocks/header/__button-close/header__button-close.css);
+@import url(../blocks/header/__button-burger/_active/header__button-burger_active.css);
+@import url(../blocks/header/__nav-bar/_active/header__nav-bar_active.css);
+
 
 @import url(../blocks/link/link.css);
 
@@ -63,6 +72,7 @@
 @import url(../blocks/appointment/__wrapper/appointment__wrapper.css);
 @import url(../blocks/appointment/__arrow/appointment__arrow.css);
 @import url(../blocks/appointment/__title/appointment__title.css);
+@import url(../blocks/appointment/__form/appointment__form.css);
 @import url(../blocks/appointment/__feedback-email/appointment__feedback-email.css);
 @import url(../blocks/appointment/__feedback-submit/appointment__feedback-submit.css);
 

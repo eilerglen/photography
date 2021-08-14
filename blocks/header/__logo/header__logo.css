@@ -1,4 +1,16 @@
 .header__logo {
     width: 40px;
     height: 40px;
+    transition: transform 1.5s ease-out;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__logo {
+      
+        
+    }
+}
+
+.header__logo:hover {
+    transform: rotate(360deg);
 }

@@ -11,3 +11,17 @@
             margin-bottom: 60px;
         }
     }
+@media screen and (max-width: 767px) {
+    .camera__subtitle {
+        font-size: 80px;
+        line-height: 90px;
+    }
+}
+    
+
+@media screen and (max-width: 460px) {
+    .camera__subtitle {
+        font-size: 48px;
+        line-height: 56px;
+        }
+    }

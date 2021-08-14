@@ -5,3 +5,11 @@
     font-weight: 400;
     margin: 0 0 100px 0;
 }
+
+@media screen and (max-width: 1023px) {
+    .composition__subtitle {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 60px;
+        }
+    }

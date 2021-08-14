@@ -1,0 +1,21 @@
+.header__button-burger {
+    padding: 0;
+    background-color: inherit;
+    width: 20px;
+    border: none;
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    opacity: .7;
+    transition: .5s linear;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__button-burger {
+        display: block;
+        align-self: center;
+        left: 41px;
+    }
+}

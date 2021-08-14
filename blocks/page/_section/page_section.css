@@ -10,3 +10,10 @@
       padding-right: 40px;
       }
   }
+
+  @media screen and (max-width: 460px) {
+    .page_section {
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+    }

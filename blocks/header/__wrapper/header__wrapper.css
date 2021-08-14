@@ -1,4 +1,5 @@
 .header__wrapper {
+    position: relative;
     min-height: 84px;
     display: flex;
     justify-content: space-between;

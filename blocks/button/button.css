@@ -1,4 +1,11 @@
 .button {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     border: none;
     border: solid #000 2px;
@@ -7,5 +14,11 @@
     width: 100%;
     background-color: #fff;
     min-height: 49px;
+    text-decoration: none;
+    transition: font-weight .6s linear;
 
+}
+
+.button:hover {
+    font-weight: 500;
 }

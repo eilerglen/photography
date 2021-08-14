@@ -16,10 +16,55 @@ function addReviewCard(data, container) {
     container.append(rev);
   }
   
-  
   /*Вызов функции добавления карточек "из коробки на страницу" на страницу в цикле по массиву*/ 
   
   reviewsArr.forEach((item) => {
     addReviewCard(item, reviewList);
   });
+
+
+  /*Открытие навигационного меню */ 
+let burgerMenuButton = document.querySelector('.header__button-burger');
+let burgerMenu = document.querySelector('.header__nav-bar');
+let logoHeader = document.querySelector('.header__logo');
+
+function openMenu(burgerMenu) {
+    burgerMenu.classList.add('header__nav-bar_active');
+    burgerMenuButton.classList.add('header__button-burger_active');
+    logoHeader.classList.add('header__logo_active')
+  }
+
+burgerMenuButton.addEventListener('click', () => {
+    openMenu(burgerMenu);
+  }); 
+
+
+/*Закрытие навигационного меню */ 
+let navBarMobileClose = document.querySelector('.header__button-close');
+
+function closeMenu(burgerMenu) {
+    burgerMenu.classList.remove("header__nav-bar_active");
+    burgerMenuButton.classList.remove('header__button-burger_active');
+    logoHeader.classList.remove('header__logo_active')
+  }
+
+   navBarMobileClose.addEventListener('click', () => {
+    closeMenu(burgerMenu)
+  });
+  
+
+  const feedbackForm = document.querySelector('.appointment__form');
+  const feedbackEmail = feedbackForm.querySelector('.appointment__feedback-email');
+  const feedbackSubmit = feedbackForm.querySelector('.appointment__feedback-submit');
+  
+  /*Функция сохранения email*/
+
+  function handleFeedbackSubmit(e) {
+    e.preventDefault();
+    let email = feedbackEmail.value;
+    feedbackForm.reset()
+  }
+  
+  feedbackForm.addEventListener("submit", handleFeedbackSubmit)
+  
   
