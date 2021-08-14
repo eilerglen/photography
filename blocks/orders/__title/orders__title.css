@@ -1,8 +1,30 @@
 .orders__title {
+    position: relative;
     margin: 0 0 50px 0;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 1023px) {
+    .orders__title{
+        margin-bottom: 40px;
 
+        }
+    }
+
+@media screen and (max-width: 460px) {
+    .orders__title {
+        margin-bottom: 30px;
+        padding-top: 20px;
+    
+    }
+    .orders__title::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-bottom: solid 1px black;
+        top: 0;
+
+    }
+}

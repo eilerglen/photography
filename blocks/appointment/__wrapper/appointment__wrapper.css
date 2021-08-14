@@ -8,7 +8,7 @@
         }
     }
 
-@media screen and (max-width: 406px) {
+@media screen and (max-width: 460px) {
     .appointment__wrapper {
         padding-left: 20px;
     }

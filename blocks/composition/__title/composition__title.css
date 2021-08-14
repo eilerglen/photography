@@ -1,8 +1,32 @@
 .composition__title {
+    position: relative;
     margin: 0;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
     margin-bottom: 50px;
 
+}
+
+@media screen and (max-width: 1023px) {
+    .composition__title {
+        margin-bottom: 40px;
+
+        }
+    }
+
+@media screen and (max-width: 460px) {
+    .composition__title {
+        margin-bottom: 30px;
+        padding-top: 20px;
+    
+    }
+    .composition__title::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-bottom: solid 1px black;
+        top: 0;
+
+    }
 }
