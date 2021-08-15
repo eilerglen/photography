@@ -41,10 +41,12 @@
 @import url(../blocks/composition/__title/composition__title.css);
 @import url(../blocks/composition/__subtitle/composition__subtitle.css);
 @import url(../blocks/composition/__description/composition__description.css);
+@import url(../blocks/composition/__description/_bold/composition__description_bold.css);
 @import url(../blocks/composition/__text/composition__text.css);
 @import url(../blocks/composition/__image/composition__image.css);
 @import url(../blocks/composition/__flex/composition__flex.css);
 @import url(../blocks/composition/__article/composition__article.css);
+
 
 /* camera */
 @import url(../blocks/camera/camera.css);

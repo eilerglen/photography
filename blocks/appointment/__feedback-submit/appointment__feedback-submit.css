@@ -21,5 +21,6 @@
     
     .appointment__feedback-submit:hover {
         font-weight: 500;
+        cursor: url('../../../images/Pointer.svg'), auto;
 
     }
