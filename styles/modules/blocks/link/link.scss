@@ -1,0 +1,16 @@
+.link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: font-weight .7s linear;
+    
+}
+
+.link:hover {
+    font-weight: 500;
+    cursor: url('../images/Pointer.svg'), auto;
+
+}
