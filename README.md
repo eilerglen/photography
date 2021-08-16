@@ -11,7 +11,7 @@
 5. Javascript
 
 ### Ссылка на GitHub Pages
-[Ссылка на мой адаптивный сайт на GitHub Pages](https://eilerglen.github.io///index.html)
+[Ссылка на мой адаптивный сайт на GitHub Pages](https://eilerglen.github.io/photography/)
 
 
  

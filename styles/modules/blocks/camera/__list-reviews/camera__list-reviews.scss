@@ -1,6 +1,5 @@
 .camera__list-reviews {
-    list-style: none;
-    padding: 0;
+    @include resetList;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 76px;

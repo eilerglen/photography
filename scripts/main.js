@@ -24,9 +24,9 @@ function addReviewCard(data, container) {
 
 
   /*Открытие навигационного меню */ 
-let burgerMenuButton = document.querySelector('.header__button-burger');
-let burgerMenu = document.querySelector('.header__nav-bar');
-let logoHeader = document.querySelector('.header__logo');
+const burgerMenuButton = document.querySelector('.header__button-burger');
+const burgerMenu = document.querySelector('.header__nav-bar');
+const logoHeader = document.querySelector('.header__logo');
 
 function openMenu(burgerMenu) {
     burgerMenu.classList.add('header__nav-bar_active');
@@ -59,12 +59,19 @@ function closeMenu(burgerMenu) {
   
   /*Функция сохранения email*/
 
-  function handleFeedbackSubmit(e) {
-    e.preventDefault();
-    let email = feedbackEmail.value;
-    feedbackForm.reset()
+  const changeSubmitValue = (evt) => {
+    
+    const inputEmailValue = feedbackEmail.value;
+    if((inputEmailValue.indexOf('@') != -1) && (inputEmailValue.indexOf('.') != -1)) {
+      /*feedbackEmail.value = "";*/
+      feedbackSubmit.value = "Спасибо!";
+      /*feedBackForm.reset()*/ 
+      evt.preventDefault();
+      feedbackForm.reset();
+    }
   }
+
+  feedbackForm.addEventListener("submit", changeSubmitValue);
   
-  feedbackForm.addEventListener("submit", handleFeedbackSubmit)
   
   

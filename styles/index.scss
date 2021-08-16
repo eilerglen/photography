@@ -1,6 +1,9 @@
 /*fonts, header, content, footer*/
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+
+@import '../styles/modules/mixins.scss';
+@import '../styles/modules/variables.scss';
 @import '../styles/modules/blocks/page/page.scss';
 @import '../styles/modules/blocks/page/_section/page_section.scss';
 @import '../styles/modules/blocks/header/header.scss';
