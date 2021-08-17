@@ -12,10 +12,11 @@
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 60px;
+        padding-top: 0;
         }
     }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 460px) {
     .orders__description {
         font-size: 14px;
         line-height: 18px;

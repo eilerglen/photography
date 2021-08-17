@@ -2,3 +2,9 @@
     display: grid;
     padding-top: $paddingSection;
 }
+
+@media screen and (max-width: 1023px) {
+    .camera__wrapper {
+        padding-top: 40px;
+        }
+    }

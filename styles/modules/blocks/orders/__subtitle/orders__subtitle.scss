@@ -8,6 +8,12 @@
 
 @media screen and (max-width: 1023px) {
     .orders__subtitle {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .orders__subtitle {
         font-size: 32px;
         line-height: 38px;
         margin-bottom: 60px;
