@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 76px;
-    margin-bottom: 50px;
+    margin-bottom: 180px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -11,3 +11,9 @@
         flex-direction: column;
         }
     }
+
+@media screen and (max-width: 460px) {
+    .camera__grid {
+        margin-bottom: 60px;
+    }
+}

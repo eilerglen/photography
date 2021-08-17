@@ -1,4 +1,5 @@
 .button {
+    box-sizing: border-box;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
@@ -9,7 +10,7 @@
     margin: 0;
     border: none;
     border: solid #000 2px;
-    border-radius: 20px;
+    border-radius: 9999px;
     max-width: 228px;
     width: 100%;
     background-color: #fff;
@@ -22,4 +23,12 @@
 .button:hover {
     font-weight: 500;
     cursor: url('../images/Pointer.svg'), auto;
+}
+
+@media screen and (max-width: 460px) {
+    .button {
+        width: 169px;
+        min-height: 40px;   
+        font-size: 14px;         
+    }
 }

@@ -3,3 +3,9 @@
     padding-top: $paddingSection;
 
 }
+
+@media screen and (max-width: 1023px) {
+    .composition__wrapper{
+        padding-top: 40px; 
+    }
+}

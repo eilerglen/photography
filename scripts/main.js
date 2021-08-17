@@ -40,7 +40,7 @@ burgerMenuButton.addEventListener('click', () => {
 
 
 /*Закрытие навигационного меню */ 
-let navBarMobileClose = document.querySelector('.header__button-close');
+const navBarMobileClose = document.querySelector('.header__button-close');
 
 function closeMenu(burgerMenu) {
     burgerMenu.classList.remove("header__nav-bar_active");

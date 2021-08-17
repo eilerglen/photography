@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.css">
-  <title>easy03</title>
+  <title>Photography</title>
 </head>
 
 <body class="page">
@@ -13,7 +13,7 @@
   <!--header-->
   
     <header class = "header">
-      <div class="header__wrapper page_section">
+      <div class="header__wrapper page__section">
         <button type = "button" class="header__button-burger">
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
@@ -23,7 +23,7 @@
         <nav class="header__nav-bar">
           <div class="header__burger-menu">
             <img src="images/logo.svg" alt="Логотип сайта" class="header__logo header__logo_mobile">
-            <button class="header__button-close"></button>
+            <button type = "button" class="header__button-close"></button>
           </div>
           <ul class="header__list-links">
           <li class="header__list-item"><a href="#composition" class="link">Композиция</a></li>
@@ -38,7 +38,7 @@
 
   <main>
     <!--Секция intro-->
-    <section class="intro page_section">
+    <section class="intro page__section">
       <div class="intro__grid">
         <h1 class="intro__title">Курс по фотографии</h1>
         <div class="intro__image"></div>      
@@ -51,9 +51,9 @@
     <!--Секция composition-->
 
     <section class="composition" id = "composition">
-      <div class="composition__wrapper  page_section">
+      <div class="composition__wrapper  page__section">
         <div class="composition__grid">
-            <h3 class="composition__title">композиция</h3>
+            <h2 class="composition__title">композиция</h2>
             <p class="composition__subtitle"> Изучите композицию </p>
             <div class="composition__image"></div>
             <div class = "composition__text">
@@ -74,9 +74,9 @@
     <!--Секция camera-->
 
     <section class="camera" id = "camera">
-      <div class="camera__wrapper page_section">
+      <div class="camera__wrapper page__section">
         <div class="camera__grid">
-            <h3 class="camera__title">камера</h3>
+            <h2 class="camera__title">камера</h2>
             <p class="camera__subtitle"> Настройка Съемка Обработка </p>
             <div class="camera__image"></div>
             <p class="camera__review"> отзывы про часть о камерах </p>
@@ -94,8 +94,8 @@
       </div>
     </section>
 
-    <section class="orders page_section">
-      <h3 class="orders__title">Поиск заказов</h3>
+    <section class="orders page__section">
+      <h2 class="orders__title">Поиск заказов</h2>
       <p class="orders__subtitle">Научим находить заказы</p>
       <div class="orders__flex">
         <div class="orders__image"></div>
@@ -112,12 +112,12 @@
 
       <!--Начинается секция Запись-->
     <section class="appointment">
-      <div class="appointment__wrapper page_section">
-        <p class="appointment__title"> <span class = "appointment__arrow"></span>Записаться! сейчас!</p>
+      <div class="appointment__wrapper page__section">
+        <h2 class="appointment__title"> <span class = "appointment__arrow"></span>Записаться! сейчас!</h2>
         <div class="appointment__form-container">
           <form name = "feedback-form" class="appointment__form" id = "feedback-form">
-            <input name = "feedback-email" type = "email" id = "email" required placeholder="Ваша почта" class = "appointment__feedback-email">
-            <input type = "submit" value = "Записаться!"class = "appointment__feedback-submit" aria-label="Записаться">
+            <input name = "feedback-email" type = "email" id = "email" required placeholder = "Ваша почта" class = "appointment__feedback-email">
+            <input type = "submit" value = "Записаться!" class = "appointment__feedback-submit" aria-label="Записаться">
 
           </form>
         </div>
@@ -126,7 +126,7 @@
   </main>
   <!--Начинается блок footer-->
   <footer class="footer ">
-    <div class="footer__wrapper page_section">
+    <div class="footer__wrapper page__section">
       <p class="footer__copyright">2021 Photo-lessons.</p>
     </div>
   </footer>
