@@ -19,10 +19,16 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1366px) {
   .page__section {
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .page__section {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -88,6 +94,19 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1023px) {
+  .header__logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header__logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+}
 .header__logo:hover {
   transform: rotate(360deg);
   cursor: url("../images/Pointer.svg"), auto;
@@ -104,6 +123,7 @@
 @media screen and (max-width: 460px) {
   .header__logo_mobile {
     display: block;
+    top: -3px;
   }
 }
 .header__list-links {
@@ -172,7 +192,7 @@
     flex-direction: column;
     align-items: center;
     z-index: 10;
-    padding-top: 26px;
+    padding-top: 20px;
   }
 }
 .header__wrapper {
@@ -207,6 +227,11 @@
     display: block;
     align-self: center;
     right: 40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header__button-burger {
+    right: 20px;
   }
 }
 .header__button-burger_active {
@@ -245,15 +270,19 @@
   display: block;
   width: 100%;
   height: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   z-index: 1;
   background-color: #fff;
 }
 
+.header__burger-line:last-of-type {
+  margin-bottom: 0;
+}
+
 .header__button-close {
   padding: 0;
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   background: transparent url(../images/button_close.svg) center no-repeat;
   background-size: cover;
   border: none;
@@ -296,13 +325,19 @@
 }
 .intro__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr minmax(400px, 642px);
   -moz-column-gap: 76px;
        column-gap: 76px;
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1340px) {
+  .intro__grid {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media screen and (max-width: 1110px) {
   .intro__grid {
     display: flex;
     flex-direction: column;
@@ -313,7 +348,7 @@
   .intro__grid {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 .intro__title {
@@ -325,7 +360,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 760px) {
   .intro__title {
     font-size: 70px;
     line-height: 1.1;
@@ -333,6 +368,7 @@
 }
 @media screen and (max-width: 460px) {
   .intro__title {
+    width: 282px;
     font-size: 47px;
     line-height: 56px;
   }
@@ -349,6 +385,11 @@
   margin-bottom: 170px;
 }
 
+@media screen and (max-width: 1340px) {
+  .intro__subtitle {
+    margin-bottom: 100px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .intro__subtitle {
     grid-row-start: 5;
@@ -370,29 +411,26 @@
   grid-row-start: 1;
   grid-row-end: span 4;
   background: url(../images/intro-image.jpg) no-repeat;
+  background-position: bottom center;
   background-size: cover;
   width: 100%;
-  background-position: center;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1110px) {
   .intro__image {
-    width: 100%;
-    min-height: 750px;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: none;
+    width: 85%;
+    min-height: 594px;
     margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .intro__image {
     width: 100%;
-    min-height: 594px;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: none;
-    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .intro__image {
+    min-height: 400px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -423,13 +461,20 @@
 }
 .composition__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr minmax(400px, 642px);
   -moz-column-gap: 76px;
        column-gap: 76px;
   margin-bottom: 100px;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1340px) {
+  .composition__grid {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media screen and (max-width: 1110px) {
   .composition__grid {
     display: flex;
     flex-direction: column;
@@ -455,6 +500,8 @@
   .composition__title {
     margin-bottom: 30px;
     padding-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .composition__title::before {
@@ -480,6 +527,7 @@
 }
 @media screen and (max-width: 460px) {
   .composition__subtitle {
+    width: 280px;
     font-size: 30px;
     line-height: 38px;
   }
@@ -511,9 +559,20 @@
   margin-bottom: 198px;
 }
 
+@media screen and (max-width: 1340px) {
+  .composition__text {
+    margin-bottom: 100px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .composition__text {
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .composition__text {
+    width: 278px;
+    margin-bottom: 30px;
   }
 }
 .composition__image {
@@ -522,40 +581,34 @@
   grid-row-start: 1;
   grid-row-end: span 4;
   background: url(../images/composition-image.jpg) no-repeat;
+  background-position: bottom center;
   background-size: cover;
-  width: 100%;
-  background-position: center;
   z-index: 10;
 }
 
 @media screen and (max-width: 1110px) {
   .composition__image {
-    width: 100%;
-    min-height: 900px;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: none;
+    width: 85%;
+    min-height: 685px;
     margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .composition__image {
     width: 100%;
     min-height: 685px;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: none;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .composition__image {
+    min-height: 400px;
   }
 }
 @media screen and (max-width: 460px) {
   .composition__image {
     width: 100%;
     min-height: 278px;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-row-start: 1;
-    grid-row-end: none;
     margin-bottom: 60px;
   }
 }
@@ -574,7 +627,7 @@
 }
 @media screen and (max-width: 460px) {
   .composition__flex {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 .composition__article {
@@ -601,9 +654,11 @@
 }
 @media screen and (max-width: 460px) {
   .composition__article {
+    width: 278px;
     font-size: 14px;
     line-height: 18px;
     padding-bottom: 14px;
+    margin-bottom: 14px;
   }
 }
 /* camera */
@@ -624,13 +679,19 @@
 }
 .camera__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr minmax(400px, 642px);
   -moz-column-gap: 76px;
        column-gap: 76px;
   margin-bottom: 180px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1340px) {
+  .camera__grid {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media screen and (max-width: 1180px) {
   .camera__grid {
     display: flex;
     flex-direction: column;
@@ -660,6 +721,8 @@
   .camera__title {
     margin-bottom: 30px;
     padding-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .camera__title::before {
@@ -678,7 +741,7 @@
   margin-bottom: 359px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1340px) {
   .camera__subtitle {
     margin-bottom: 100px;
   }
@@ -696,6 +759,7 @@
 }
 @media screen and (max-width: 460px) {
   .camera__subtitle {
+    width: 250px;
     font-size: 48px;
     line-height: 56px;
   }
@@ -707,6 +771,12 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 460px) {
+  .camera__review {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .camera__review-item {
   list-style-type: none;
 }
@@ -744,43 +814,32 @@
   grid-row-start: 1;
   grid-row-end: span 4;
   background: url(../images/camera-image.jpg) no-repeat;
+  background-position: top left;
   background-size: cover;
   width: 100%;
-  background-position: center;
   z-index: 10;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1280px) {
   .camera__image {
-    max-width: 100%;
-    min-height: 900px;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-row-start: 1;
-    grid-row-end: none;
-    margin-bottom: 60px;
+    grid-row-end: span 2;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1180px) {
   .camera__image {
-    max-width: 100%;
+    width: 85%;
     min-height: 656px;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-row-start: 1;
-    grid-row-end: none;
     margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .camera__image {
-    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 525px) {
+  .camera__image {
     min-height: 400px;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-row-start: 1;
-    grid-row-end: none;
-    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -811,6 +870,11 @@
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 460px) {
+  .camera__list-reviews {
+    margin-bottom: 20px;
+  }
+}
 .camera__review-text {
   margin: 0;
   max-width: 526px;
@@ -821,6 +885,7 @@
 
 @media screen and (max-width: 460px) {
   .camera__review-text {
+    width: 280px;
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 30px;
@@ -836,6 +901,8 @@
 @media screen and (max-width: 460px) {
   .camera__review-user {
     margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .camera__review-login {
@@ -844,6 +911,12 @@
   line-height: 24px;
 }
 
+@media screen and (max-width: 460px) {
+  .camera__review-login {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
 /* orders */
 .orders {
   padding-top: 50px;
@@ -870,6 +943,8 @@
 }
 @media screen and (max-width: 460px) {
   .orders__title {
+    font-size: 14px;
+    line-height: 20px;
     margin-bottom: 30px;
     padding-top: 20px;
   }
@@ -914,20 +989,19 @@
 @media screen and (max-width: 1100px) {
   .orders__image {
     max-width: 100%;
-    min-height: 500px;
+    height: 500px;
   }
 }
 @media screen and (max-width: 1023px) {
   .orders__image {
     max-width: 100%;
-    min-height: 360px;
+    height: 360px;
     margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 147px) {
+@media screen and (max-width: 460px) {
   .orders__image {
-    max-width: 100%;
-    min-height: 360px;
+    height: 147px;
   }
 }
 .orders__description {
@@ -941,17 +1015,25 @@
 
 @media screen and (max-width: 1023px) {
   .orders__description {
-    font-size: 14px;
-    line-height: 18px;
     margin-bottom: 60px;
     padding-top: 0;
   }
 }
 @media screen and (max-width: 460px) {
   .orders__description {
+    width: 280px;
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 30px;
+  }
+}
+.orders__text {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1025px) {
+  .orders__text {
+    margin-left: 0;
   }
 }
 .orders__flex {
@@ -963,13 +1045,13 @@
 @media screen and (max-width: 1025px) {
   .orders__flex {
     flex-direction: column;
+    justify-content: flex-start;
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 460px) {
   .orders__flex {
-    flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 /* appointment */
@@ -979,11 +1061,21 @@
   padding-top: 50px;
 }
 
+@media screen and (max-width: 1023px) {
+  .appointment {
+    padding-top: 40px;
+  }
+}
 .appointment__wrapper {
   padding-left: 179px;
   padding-bottom: 36px;
 }
 
+@media screen and (max-width: 1340px) {
+  .appointment__wrapper {
+    padding-left: 239px;
+  }
+}
 @media screen and (max-width: 1110px) {
   .appointment__wrapper {
     padding-left: 60px;
@@ -1029,12 +1121,13 @@
 
 @media screen and (max-width: 1023px) {
   .appointment__title {
+    max-width: 571px;
     font-size: 100px;
     line-height: 100px;
     margin-bottom: 190px;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
   .appointment__title {
     font-size: 70px;
     line-height: 1.1;
@@ -1042,6 +1135,7 @@
 }
 @media screen and (max-width: 460px) {
   .appointment__title {
+    width: 274px;
     font-size: 48px;
     line-height: 50px;
     margin-bottom: 200px;
@@ -1077,7 +1171,8 @@
 
 @media screen and (max-width: 460px) {
   .appointment__feedback-email {
-    width: 175px;
+    font-size: 11px;
+    max-width: 150px;
   }
 }
 .appointment__feedback-email:hover {
@@ -1101,6 +1196,7 @@
 
 @media screen and (max-width: 460px) {
   .appointment__feedback-submit {
+    font-size: 11px;
     width: 107px;
   }
 }
@@ -1138,3 +1234,9 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+@media screen and (max-width: 460px) {
+  .footer__copyright {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=index.css.map */

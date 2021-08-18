@@ -3,3 +3,9 @@
     color: $colorText;
     padding-top: $paddingSection;
 }
+
+@media screen and (max-width: 1023px) {
+    .appointment {
+        padding-top: 40px;
+        }
+    }

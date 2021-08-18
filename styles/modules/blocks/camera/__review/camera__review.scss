@@ -4,3 +4,11 @@
     line-height: 28px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 460px) {
+    .camera__review {
+        font-size: 14px;
+        line-height: 20px;
+    
+    }
+}

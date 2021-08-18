@@ -10,13 +10,14 @@
 
 @media screen and (max-width: 1023px) {
     .appointment__title {
+        max-width: 571px;
         font-size: 100px;
         line-height: 100px;
         margin-bottom: 190px;
         }
     }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
         .appointment__title {
             font-size: 70px;
             line-height: 1.1;
@@ -25,6 +26,7 @@
 
 @media screen and (max-width: 460px) {
     .appointment__title {
+        width: 274px;
         font-size: 48px;
         line-height: 50px;
         margin-bottom: 200px;

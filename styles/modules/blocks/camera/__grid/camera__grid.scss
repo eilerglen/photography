@@ -1,11 +1,17 @@
 .camera__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr minmax(400px, 642px);
     column-gap: 76px;
     margin-bottom: 180px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1340px) {
+    .camera__grid {
+        column-gap: 50px;
+        
+        }
+    }
+@media screen and (max-width: 1180px) {
     .camera__grid {
         display: flex;
         flex-direction: column;

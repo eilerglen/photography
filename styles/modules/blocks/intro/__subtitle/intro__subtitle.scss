@@ -11,6 +11,13 @@
 
 }
 
+@media screen and (max-width: 1340px) {
+    .intro__subtitle {
+        margin-bottom: 100px;
+        
+        }
+    }
+
 @media screen and (max-width: 1023px) {
     .intro__subtitle {
         grid-row-start: 5;
@@ -19,6 +26,7 @@
         }
     }
 
+    
 @media screen and (max-width: 460px) {
     .intro__subtitle {
         width: 276px;

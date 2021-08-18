@@ -1,11 +1,17 @@
 .intro__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr minmax(400px, 642px);
     column-gap: 76px;
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1340px) {
+    .intro__grid {
+        column-gap: 50px;
+        }
+    }
+
+@media screen and (max-width: 1110px) {
     .intro__grid {
         display: flex;
         flex-direction: column;
@@ -17,6 +23,6 @@
     .intro__grid {
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }

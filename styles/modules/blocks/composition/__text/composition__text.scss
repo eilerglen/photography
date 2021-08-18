@@ -2,9 +2,25 @@
     margin-bottom: 198px;
 }
 
+@media screen and (max-width: 1340px) {
+    .composition__text {
+        margin-bottom: 100px;
+
+        }
+    }
+
+
 @media screen and (max-width: 1023px) {
     .composition__text {
         margin-bottom: 60px;
 
         }
     }
+
+@media screen and (max-width: 460px) {
+    .composition__text {
+        width: 278px;
+        margin-bottom: 30px;
+    
+    }
+}

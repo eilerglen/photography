@@ -19,3 +19,9 @@
         right: 40px;
     }
 }
+
+@media screen and (max-width: 460px) {
+    .header__button-burger {
+        right: 20px;
+    }
+}

@@ -4,42 +4,40 @@
     grid-row-start: 1;
     grid-row-end: span 4;
     background: url(../images/composition-image.jpg) no-repeat;
+    background-position: bottom center;
     background-size: cover;
-    width: 100%;
-    background-position: center;
     z-index: 10;
 }
 
+
+
 @media screen and (max-width: 1110px) {
     .composition__image {
-        width: 100%;
-        min-height: 900px;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        grid-row-end: none;
+        width: 85%;
+        min-height: 685px;
         margin-bottom: 60px;
         }
     }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
     .composition__image {
         width: 100%;
         min-height: 685px;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        grid-row-end: none;
         margin-bottom: 60px;
-        }
     }
+}
+
+@media screen and (max-width: 545px) {
+    .composition__image {
+        min-height: 400px;
+        
+    }
+}
 
 @media screen and (max-width: 460px) {
     .composition__image {
         width: 100%;
         min-height: 278px;
-        grid-column-start: 1;
-        grid-row-start: 2;
-        grid-row-start: 1;
-        grid-row-end: none;
         margin-bottom: 60px;
     }
 }
