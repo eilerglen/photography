@@ -1,0 +1,31 @@
+.appointment__wrapper {
+    padding-left: 179px;
+    padding-bottom: 36px;
+}
+
+
+@media screen and (max-width: 1340px) {
+    .appointment__wrapper {
+        padding-left: 239px;
+        }
+    }
+
+@media screen and (max-width: 1110px) {
+    .appointment__wrapper {
+        padding-left: 60px;
+        }
+    }
+
+@media screen and (max-width: 1023px) {
+    .appointment__wrapper {
+        padding-left: 40px;
+        padding-bottom: 40px;
+        }
+    }
+
+@media screen and (max-width: 460px) {
+    .appointment__wrapper {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}

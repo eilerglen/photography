@@ -1,0 +1,21 @@
+.camera__list-reviews {
+    @include resetList;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-bottom: 50px;
+
+}
+
+@media screen and (max-width: 1023px) {
+    .camera__list-reviews{
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;
+        }
+    }
+
+@media screen and (max-width: 460px) {
+    .camera__list-reviews{
+         margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+.composition__article {
+    margin: 0;
+    width: 291px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+   
+}
+
+@media screen and (max-width: 1023px) {
+    .composition__article {
+       width: 100%;
+       padding-bottom: 30px;
+       margin-bottom: 30px;
+       border-bottom: 1px solid  #000;
+       
+        }
+    .composition__article:last-of-type {
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    }
+
+@media screen and (max-width: 460px) {
+    .composition__article {
+        width: 278px;
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 14px;
+        margin-bottom: 14px;   
+    }
+
+    
+}
+    

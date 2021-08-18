@@ -1,0 +1,21 @@
+.composition__subtitle {
+    max-width: 430px;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 400;
+    margin: 0 0 100px 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .composition__subtitle {
+        margin-bottom: 60px;
+        }
+    }
+
+@media screen and (max-width: 460px) {
+    .composition__subtitle {
+        width: 280px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+}

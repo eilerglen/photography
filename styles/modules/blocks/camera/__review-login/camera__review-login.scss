@@ -1,0 +1,12 @@
+.camera__review-login {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 460px) {
+    .camera__review-login {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}

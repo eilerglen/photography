@@ -1,7 +1,0 @@
-.camera__image {
-    background: url(../../../images/camera-image.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    background-position: center;
-    z-index: 10;
-}

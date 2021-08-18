@@ -1,0 +1,13 @@
+.header__wrapper {
+    position: relative;
+    min-height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 460px) {
+    .header__wrapper{
+        min-height: 70px;
+        }
+    }

@@ -1,0 +1,15 @@
+.header__list-links {
+    @include resetList;
+    display: flex;
+
+}
+
+@media (max-width: 460px) {
+    .header__list-links {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 26px;
+    }   
+
+}

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="pages/index.css">
-  <title>easy03</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Photography</title>
 </head>
 
 <body class="page">
@@ -13,17 +13,23 @@
   <!--header-->
   
     <header class = "header">
-      <div class="header__wrapper page_section">
-       <!--<button class="button-burger"></button>-->
+      <div class="header__wrapper page__section">
+        <button type = "button" class="header__button-burger">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
         <img src="images/logo.svg" alt="Логотип сайта" class="header__logo">
         <nav class="header__nav-bar">
-       <!-- <button class="header__close-nav-bar"></button>-->
-        <ul class="header__list-links">
+          <div class="header__burger-menu">
+            <img src="images/logo.svg" alt="Логотип сайта" class="header__logo header__logo_mobile">
+            <button type = "button" class="header__button-close"></button>
+          </div>
+          <ul class="header__list-links">
           <li class="header__list-item"><a href="#composition" class="link">Композиция</a></li>
           <li class="header__list-item"><a href="#camera" class="link">Камера</a></li>
-          <li class="header__list-item"><a href="" class="link">Поиск заказов</a></li>
-        </ul>
-  
+          <li class="header__list-item"><a href="" class="link">Поиск&nbsp;заказов</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -31,54 +37,52 @@
   <!--Начинается основной контент страницы-->
 
   <main>
-    <!--Секция intro-->
-    <section class="intro page_section">
+    
+    <section class="intro page__section">
       <div class="intro__grid">
-        <div class="intro__info">
-          <h1 class="intro__title">Курс по фотографии</h1>
-          <p class="intro__subtitle">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
-          <button class="button"><a href=""> Подробнее</a></button>
-        </div>
-        <div class="intro__image"></div>
+        <h1 class="intro__title">Курс по фотографии</h1>
+        <div class="intro__image"></div>      
+        <p class="intro__subtitle">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
+        <a href="" class = "button"> Подробнее</a>
     </div>
 
     </section>
 
-    <section class="composition" id = "composition">
-      <div class="composition__wrapper  page_section">
+   
+
+   <section class="composition" id = "composition">
+      <div class="composition__wrapper  page__section">
         <div class="composition__grid">
-          <div class="composition__info">
-            <h3 class="composition__title">композиция</h3>
+            <h2 class="composition__title">композиция</h2>
             <p class="composition__subtitle"> Изучите композицию </p>
+            <div class="composition__image"></div>
             <div class = "composition__text">
-              <p class="composition__description">Вы изучите гармоничное размещение всех элементов изображения на снимке.</p>
+              <p class="composition__description">Вы изучите гармоничное размещение всех элементов изображения на <span class = "composition__description composition__description_bold">снимке</span>.</p>
               <p class="composition__description">Изучите композицию интуитивную и какие-то определённые законы.</p>
             </div>
-            <button class="button"> Подробнее </button>
-          </div>
-          <div class="composition__image"></div>
+            <a href="#feedback-form" class = "button"> Записаться!</a>
         </div>
         <div class = "composition__flex">
           <p class = "composition__article">Правило третей, при котором нужно распологать объекты на пересечениях.</p>
           <p class = "composition__article">Простота: убирай всё лишнее и кадрируй!</p>
           <p class = "composition__article">Равновесие: уравновесь пятна объекта и фона.</p>
           <p class = "composition__article">3D глубина кадра: расположи объект позади и перед другими предметами.</p>
-        </div>  
+        </div>
       </div>
     </section>
-    
-    <section class="camera" id = "camera">
-      <div class="camera__wrapper page_section">
+
+   
+
+   <section class="camera" id = "camera">
+      <div class="camera__wrapper page__section">
         <div class="camera__grid">
-          <div class="camera__info">
-            <h3 class="camera__title">камера</h3>
+            <h2 class="camera__title">камера</h2>
             <p class="camera__subtitle"> Настройка Съемка Обработка </p>
+            <div class="camera__image"></div>
             <p class="camera__review"> отзывы про часть о камерах </p>
-          </div>
-          <div class="camera__image"></div>
         </div>
         <ul class = "camera__list-reviews">
-          <!-- Собственнно темплейт, который должен выводить отзывы на страницу-->
+        
          <template id = "template-review">
            <li class = "camera__review-item">
              <p class = "camera__review-text"></p>
@@ -90,29 +94,39 @@
       </div>
     </section>
 
-    <section class="orders page_section">
-      <h3 class="orders__title">Поиск заказов</h3>
+    <section class="orders page__section">
+      <h2 class="orders__title">Поиск заказов</h2>
       <p class="orders__subtitle">Научим находить заказы</p>
+      <div class="orders__flex">
+        <div class="orders__image"></div>
+        <div class = "orders__text">
+          <p class="orders__description">Мы научим вас искать заказы на всяких фриланс биржах, а
+            когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.</p>
+          <a href="#feedback-form" class = "button">  Записаться!</a>
+        </div>
+       
+        
+      </div>
+     
     </section>
 
-      <!--Начинается секция Запись-->
+      
     <section class="appointment">
-      <div class="appointment__wrapper page_section">
-        <span class = "appointment__arrow"></span>
-        <p class="appointment__title">Записаться! сейчас!</p>
+      <div class="appointment__wrapper page__section">
+        <h2 class="appointment__title"> <span class = "appointment__arrow"></span>Записаться! сейчас!</h2>
         <div class="appointment__form-container">
-          <form action="" class="appointment__form">
-            <input type="email" id = "email" name = "email" placeholder="Ваша почта">
-            <button type = "submit" aria-label="Записаться"> Записаться</button>
+          <form name = "feedback-form" class="appointment__form" id = "feedback-form">
+            <input name = "feedback-email" type = "email" id = "email" required placeholder = "Ваша почта" class = "appointment__feedback-email">
+            <input type = "submit" value = "Записаться!" class = "appointment__feedback-submit" aria-label="Записаться">
 
           </form>
         </div>
       </div>    
     </section>
   </main>
-  <!--Начинается блок footer-->
+ 
   <footer class="footer ">
-    <div class="footer__wrapper page_section">
+    <div class="footer__wrapper page__section">
       <p class="footer__copyright">2021 Photo-lessons.</p>
     </div>
   </footer>
