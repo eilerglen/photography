@@ -403,6 +403,7 @@
     line-height: 18px;
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 30px;
   }
 }
 .intro__image {
@@ -859,8 +860,8 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 76px;
-       column-gap: 76px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   margin-bottom: 50px;
 }
 
@@ -1172,7 +1173,7 @@
 @media screen and (max-width: 460px) {
   .appointment__feedback-email {
     font-size: 11px;
-    max-width: 150px;
+    max-width: 175px;
   }
 }
 .appointment__feedback-email:hover {
@@ -1239,4 +1240,4 @@
   .footer__copyright {
     font-size: 12px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
